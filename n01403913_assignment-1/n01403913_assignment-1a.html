@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Assignment 1a</title>
 </head>
 <body>
     <h1>Bus Tour Booking</h1>
+    <h2>Please Fill in all the following information to help you with Bus Tour Booking</h2>
     <form method="get" action="https://postman-echo.com/get">
         <section>
-            <h2>Personal Information</h2>
+            <h3>Personal Information</h3>
             <div>
                 <label for="userFname">Your First Name :</label>
                 <input type="text" id="userFname" name="userFname" />
@@ -19,7 +20,7 @@
             </div>
         </section>
         <section>
-            <h2>Select from following Locations you desire (we will provide you best package accordingly):</h2>
+            <h3>Select from following Locations you desire (we will provide you best package accordingly):</h3>
             <div>
                 <input type="checkbox" id="location_montreal" name="location_montreal" />
                 <label for="location_montreal">Montreal</label>
@@ -38,7 +39,7 @@
             </div>
         </section>
         <section>
-            <h2>Choose your age group:</h2>
+            <h3>Choose your age group:</h3>
             <div>
                 <select id="age_group" name="age_group">
                     <option value="age_group_1">01 - 15 YEARS</option>
@@ -50,7 +51,7 @@
             </div>
         </section>
         <section>
-            <h2>Choose Method of Payment:</h2>
+            <h3>Choose Method of Payment:</h3>
             <div>
                 <input type="radio" id="payment_cash" name="payment_type" value="cash"/><label for="payment_cash">CASH</label>
                 <input type="radio" id="payment_credit" name="payment_type" value="credit"/><label for="payment_credit">CREDIT CARD</label>
@@ -58,6 +59,7 @@
             </div>
         </section>
         <section>
+            <h3>After Filling the form do not forget to click SUBMIT</h3>
             <input type="submit" value="submit" />
         </section>
     </form>
