@@ -5,37 +5,37 @@
     <title>Assignment 1a</title>
 </head>
 <body>
-    <h1>Bus Tour Booking</h1>
-    <h2>Please Fill in all the following information to help you with Bus Tour Booking</h2>
+    <h1>BUS TOUR BOOKING</h1>
+    <h2>Please fill in all the following information to help you with Bus Tour Booking</h2>
     <form method="get" action="https://postman-echo.com/get">
         <section>
             <h3>Personal Information</h3>
             <div>
-                <label for="userFname">Your First Name :</label>
-                <input type="text" id="userFname" name="userFname" />
+                <label for="user_fname">Your First Name :</label>
+                <input type="text" id="user_fname" name="user_fname" />
             </div>
             <div>
-                <label for="userLname">Your Last Name :</label>
-                <input type="text" id="userLname" name="userLname" />
+                <label for="user_lname">Your Last Name :</label>
+                <input type="text" id="user_lname" name="user_lname" />
             </div>
         </section>
         <section>
-            <h3>Select from following Locations you desire (we will provide you best package accordingly):</h3>
+            <h3>Select from following locations you desire (we will provide you best package accordingly):</h3>
             <div>
-                <input type="checkbox" id="location_montreal" name="location_montreal" />
-                <label for="location_montreal">Montreal</label>
+                <input type="checkbox" id="location_1" name="location_1" />
+                <label for="location_1">Montreal</label>
             </div>
             <div>
-                <input type="checkbox" id="location_toronto" name="location_toronto" />
-                <label for="location_toronto">Toronto</label>
+                <input type="checkbox" id="location_2" name="location_2" />
+                <label for="location_2">Toronto</label>
             </div>
             <div>
-                <input type="checkbox" id="location_newyork" name="location_newyork" />
-                <label for="location_newyork">New York</label>
+                <input type="checkbox" id="location_3" name="location_3" />
+                <label for="location_3">New York</label>
             </div>
             <div>
-                <input type="checkbox" id="location_ottawa" name="location_ottawa" />
-                <label for="location_ottawa">Ottawa</label>
+                <input type="checkbox" id="location_4" name="location_4" />
+                <label for="location_4">Ottawa</label>
             </div>
         </section>
         <section>
@@ -46,21 +46,25 @@
                     <option value="age_group_2">16 - 30 YEARS</option>
                     <option value="age_group_3">31 - 45 YEARS</option>
                     <option value="age_group_4">46 - 60 YEARS</option>
-                    <option value="age_group_5">60 +</option>
+                    <option value="age_group_5">60 + YEARS</option>
                 </select>
             </div>
         </section>
         <section>
-            <h3>Choose Method of Payment:</h3>
+            <h3>Choose method of Payment:</h3>
             <div>
-                <input type="radio" id="payment_cash" name="payment_type" value="cash"/><label for="payment_cash">CASH</label>
-                <input type="radio" id="payment_credit" name="payment_type" value="credit"/><label for="payment_credit">CREDIT CARD</label>
-                <input type="radio" id="payment_debit" name="payment_type" value="debit"/><label for="payment_debit">DEBIT CARD</label>
+                <input type="radio" id="payment_method_cash" name="payment_method" value="payment_method_cash"/><label for="payment_method_cash">CASH</label>
+            </div>
+            <div>
+                <input type="radio" id="payment_method_credit" name="payment_method" value="payment_method_credit"/><label for="payment_method_credit">CREDIT CARD</label>
+             </div>
+            <div>
+                <input type="radio" id="payment_method_debit" name="payment_method" value="payment_method_debit"/><label for="payment_method_debit">DEBIT CARD</label>
             </div>
         </section>
         <section>
             <h3>After Filling the form do not forget to click SUBMIT</h3>
-            <input type="submit" value="submit" />
+            <input type="submit" value="SUBMIT" />
         </section>
     </form>
 </body>
