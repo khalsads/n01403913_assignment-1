@@ -1,25 +1,47 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body {
+    padding: 5px 20px;
+    border:solid 2px;
+    width: 1200px;
+    margin : 0 auto;
+    text-align:center;
 }
 
+section{
+    border:solid 2px;
+    margin-bottom:2em;
+    padding:0 1em;
+    text-align:left;
+}
+
+div {
+    margin-bottom:1.5em;
+}
+/*
+#booking_user_age_group, #booking_user_gender, #booking_user_email, #booking_user_phone, #booking_user_select_location, #booking_user_select_date, #booking_payment {
+    margin: auto;
+    text-align: left;
+}
+    */
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
+
+/*
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+    */
 /* Set widths on the form inputs since otherwise they're 100% wide */
+/*
 input,
 select,
 textarea {
     max-width: 280px;
 }
-
+*/
 
 /* Responsive: Portrait tablets and up */
+/*
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
@@ -29,3 +51,4 @@ textarea {
         padding: 0;
     }
 }
+*/

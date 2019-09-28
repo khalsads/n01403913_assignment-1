@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="n01403913_assignment-1a.aspx" />
+    <Content Include="n01403913_assignment-1b.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="n01403913_assignment-1a.html" />
     <Content Include="Scripts\bootstrap.js" />
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="n01403913_assignment-1a.aspx.designer.cs">
       <DependentUpon>n01403913_assignment-1a.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="n01403913_assignment-1b.aspx.cs">
+      <DependentUpon>n01403913_assignment-1b.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="n01403913_assignment-1b.aspx.designer.cs">
+      <DependentUpon>n01403913_assignment-1b.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
