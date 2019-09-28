@@ -83,8 +83,6 @@
                         <asp:ListItem Text="Monrteal" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Toronto" Value="2"></asp:ListItem>
                         <asp:ListItem Text="Niagra Falls" Value="3"></asp:ListItem>
-                        <asp:ListItem Text="New York" Value="4"></asp:ListItem>
-                        <asp:ListItem Text="Vancuver" Value="5"></asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator
                         runat="server"
