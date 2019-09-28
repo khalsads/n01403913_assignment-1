@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="n01403913_assignment-1b.aspx.cs" Inherits="n01403913_assignment_1.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="n01403913_assignment-1b-extra.aspx.cs" Inherits="n01403913_assignment_1.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -79,16 +79,29 @@
                 <div>
                     <label for="booking_user_select_location">CHOOSE LOCATION:</label>
                     <asp:DropDownList runat="server" ID="booking_user_select_location">
-                        <asp:ListItem Text="--Location--" Value="" Selected="True"></asp:ListItem>
+                        <asp:ListItem Text="--Location--" Value="5" Selected="True"></asp:ListItem>
                         <asp:ListItem Text="Monrteal" Value="1"></asp:ListItem>
                         <asp:ListItem Text="Toronto" Value="2"></asp:ListItem>
                         <asp:ListItem Text="Niagra Falls" Value="3"></asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator
+                    <%/* Compare Validator Used to compare the seleted value.
+* Validator will check if the value submitted or selected is 5 which is assigned to "--Location--" then it will promt user to select location
+* If any other value is submitted then no error msg will displayed.
+*/ %>
+                    <asp:CompareValidator
                         runat="server"
+                        ErrorMessage="**Click the drop down menu to select value**"
                         ControlToValidate="booking_user_select_location"
-                        ErrorMessage="Please choose location">
-                    </asp:RequiredFieldValidator>
+                        ValueToCompare="5"
+                        Operator="NotEqual">
+                    </asp:CompareValidator>
+                    <%/*                    
+* <asp:RequiredFieldValidator
+* runat="server"
+* ControlToValidate="booking_user_select_location"
+* ErrorMessage="Please choose location">
+* </asp:RequiredFieldValidator>
+*/%>
                 </div>
                 <div>
                     <label for="booking_user_select_date">ENTER DATE</label>
@@ -105,11 +118,11 @@
                         ValidationExpression="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](10|20)\d\d$">
                     </asp:RegularExpressionValidator>
                     <%/* I found this regular expression validater posted by : Paulie Waulie
-                       * Site:https ://stackoverflow.com/questions/3667199/date-validation-for-a-textbox
-                       * I choosed to use this code as I tested for various values and it is working good,
-                       * found that the original code was not allowing me to select  year older that 1900 so checked the expression and made changes,
-                       * so now I can select as old as year 1000
-                       */ %>
+* Site:https ://stackoverflow.com/questions/3667199/date-validation-for-a-textbox
+* I choosed to use this code as I tested for various values and it is working good,
+* found that the original code was not allowing me to select  year older that 1900 so checked the expression and made changes,
+* so now I can select as old as year 1000
+*/ %>
                 </div>
                 <div>
                     <label for="booking_payment">SELECT PAYMENT METHOD: </label>
