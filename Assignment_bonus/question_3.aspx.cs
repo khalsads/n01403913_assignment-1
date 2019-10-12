@@ -28,30 +28,65 @@ namespace Assignment_bonus
                     //Storing values submitted by form to server side integers.
                     int Ticket_Ordered = Convert.ToInt32(ticket_ordered.Text);
 
+                    //All Variable used declared
+                    int Reminder;
+                    int Loop;
+                    Double Cost=0.25;
+                    Double Total_Cost= Ticket_Ordered * Cost;
+
                     //Clearing previous stored in MsgOut variable.
                     string MsgOut = "";
 
                     //Display value as per user selection
-                    MsgOut = "You Selected ";
-                    ticket_ordered_result.InnerHtml += "<br>"+MsgOut + Ticket_Ordered.ToString()+"<br>";
+                    MsgOut = "<br>You received a bundle of ";
+
+                    //                    ticket_ordered_result.InnerHtml += MsgOut + Ticket_Ordered.ToString()+"<br>";
 
                     if (Ticket_Ordered <= 50)
                     {
-                        ticket_ordered_result.InnerHtml += "<br> your selected value is less than or equal to 50 <br>";
+                        for (var i=1; i<=Ticket_Ordered; i++) {
+                            ticket_ordered_result.InnerHtml += MsgOut + "1! That's " +i.ToString()+ " ticket(s)!";
+                        }
+                        ticket_ordered_result.InnerHtml += "<br><br>Your total ticket(s) is "+Ticket_Ordered.ToString()+" and your cost is $"+Total_Cost.ToString()+"cad.";
                     }
                     else if ((Ticket_Ordered > 50) && (Ticket_Ordered <= 150))
                     {
-
-                        ticket_ordered_result.InnerHtml += "<br> your selected value is higher than 50 and less than 150 <br>";
+                        Reminder = Ticket_Ordered % 2;
+                        Loop = (Ticket_Ordered - Reminder) / 2;
+                        for (var i = 1; i <= Loop; i++)
+                        {
+                            ticket_ordered_result.InnerHtml += MsgOut + "2! That's " +(i*2).ToString()+ " ticket(s)!";
+                        }
+                        if (Reminder > 0)
+                        {
+                            ticket_ordered_result.InnerHtml += "<br>Your leftover is "+Reminder.ToString()+" ticket(s). That's " + Ticket_Ordered.ToString() + " ticket(s)!";
+                        }
+                        ticket_ordered_result.InnerHtml += "<br><br>Your total ticket(s) is " + Ticket_Ordered.ToString() + " and your cost is $" + Total_Cost.ToString() + "cad!";
                     }
                     else if ((Ticket_Ordered > 150) && (Ticket_Ordered <= 300))
                     {
-
-                        ticket_ordered_result.InnerHtml += "<br> your selected value is higher than 150 and less than 300 <br>";
+                        Reminder = Ticket_Ordered % 3;
+                        Loop = (Ticket_Ordered - Reminder) / 3;
+                        for (var i = 1; i <= Loop; i++)
+                        {
+                            ticket_ordered_result.InnerHtml += MsgOut + "3! That's " +(i*3).ToString()+ " ticket(s)!";
+                        }
+                        if (Reminder > 0) {
+                            ticket_ordered_result.InnerHtml += "<br>Your leftover is "+Reminder.ToString()+" ticket(s). That's " + Ticket_Ordered.ToString()+ " ticket(s)!";
+                        }
+                        ticket_ordered_result.InnerHtml += "<br><br>Your total ticket(s) is " + Ticket_Ordered.ToString() + " and your cost is $" + Total_Cost.ToString() + "cad!";
                     }
                     else if (Ticket_Ordered > 300) {
-                        ticket_ordered_result.InnerHtml += "<br> your selected value is higher than 300<br>";
-
+                        Reminder = Ticket_Ordered % 5;
+                        Loop = (Ticket_Ordered - Reminder) / 5;
+                        for (var i = 1; i <= Loop; i++)
+                        {
+                            ticket_ordered_result.InnerHtml += MsgOut + "5! That's " +(i*5).ToString()+ " ticket(s)!";
+                        }
+                        if (Reminder > 0) {
+                            ticket_ordered_result.InnerHtml += "<br>Your leftover is "+Reminder.ToString()+" ticket(s). That's "+Ticket_Ordered.ToString()+" ticket(s)!";
+                        }
+                        ticket_ordered_result.InnerHtml += "<br><br>Your total ticket(s) is "+Ticket_Ordered.ToString()+" and your cost is $"+Total_Cost.ToString()+"cad!";
                     }
                 }
             }
