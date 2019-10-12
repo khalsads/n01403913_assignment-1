@@ -15,8 +15,28 @@
         <div>
             <label for="ticket_ordered">How many tickets you wnat to purchase:</label>
             <asp:TextBox ID="ticket_ordered" runat="server"></asp:TextBox>
+            <%-- Requiredfied validator to check if no value entered --%>
+            <asp:RequiredFieldValidator
+                runat="server"
+                ControlToValidate="ticket_ordered"
+                EnableClientScript="true"
+                ErrorMessage="Please Enter Value, input field is empty!">
+            </asp:RequiredFieldValidator>
+            <%-- Compare Validator to prompt user to enter value higher than 0 (i.e. no negative value or 0 as input) --%>
+            <asp:CompareValidator
+                runat="server"
+                ErrorMessage="Please choose value higher than 0"
+                ControlToValidate="ticket_ordered"
+                EnableClientScript="true"
+                ValueToCompare= 0
+                Operator="GreaterThan"
+                Type="Integer">
+
+            </asp:CompareValidator>
+
         </div>
         <asp:Button runat="server" Text="SUBMIT"/>
+        <div id="ticket_ordered_result" runat="server"></div>
     </form>
 </body>
 </html>

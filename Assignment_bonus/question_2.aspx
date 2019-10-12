@@ -34,6 +34,7 @@
             <asp:CheckBox runat="server" ID="selected_DaySaturday" />
         </div>
         <asp:Button runat="server" Text="SUBMIT"/>
+        <div runat="server" id="value_selected_result"></div>
     </form>
 </body>
 </html>

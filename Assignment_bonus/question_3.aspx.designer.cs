@@ -31,5 +31,14 @@ namespace Assignment_bonus
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ticket_ordered;
+
+        /// <summary>
+        /// ticket_ordered_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ticket_ordered_result;
     }
 }

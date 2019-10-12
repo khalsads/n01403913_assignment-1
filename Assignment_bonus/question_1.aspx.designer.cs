@@ -24,21 +24,30 @@ namespace Assignment_bonus
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// value_Xaxis control.
+        /// value_x_axis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox value_Xaxis;
+        protected global::System.Web.UI.WebControls.TextBox value_x_axis;
 
         /// <summary>
-        /// value_Yaxis control.
+        /// value_y_axis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox value_Yaxis;
+        protected global::System.Web.UI.WebControls.TextBox value_y_axis;
+
+        /// <summary>
+        /// value_selected_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl value_selected_result;
     }
 }
